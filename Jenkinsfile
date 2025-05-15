@@ -14,8 +14,8 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 script {
-                    git credentialsId: 'jenkins-ssh-agents-private-key',
-                        url: 'git@github.com:DEL-ORG/s8kevinaf02-webhook.git',
+                    git credentialsId: 'e50d2df5-49e1-4eff-83a1-6fbcc5169464',
+                        url: 'https://github.com/DEL-ORG/s8kevinaf02-webhook.git',
                         branch: "${params.BRANCH_NAME}"
             }
             }
